@@ -36,9 +36,7 @@ public class SecurityConfiguration {
                         .deleteCookies("JSESSIONID"))
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(AntPathRequestMatcher.antMatcher("/h2-console/**")).permitAll()
-                        // .requestMatchers(HttpMethod.GET, endpoint + "/allevents", endpoint + "/images/**").permitAll()
-                        .requestMatchers(HttpMethod.GET, endpoint + "/login").hasAnyRole("USER", "ADMIN")
-                        .requestMatchers(HttpMethod.GET, endpoint + "/events").permitAll()
+                        .requestMatchers(HttpMethod.GET, endpoint + "/products").permitAll()
                         .anyRequest().authenticated())
                 .httpBasic(Customizer.withDefaults())
                 .sessionManagement(session -> session
