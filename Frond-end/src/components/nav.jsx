@@ -38,7 +38,7 @@ const Nav = () => {
     <StyledNav>
       <StyleLink to="/">
         <Title>Bizzar bazar</Title>
-        </StyleLink>
+      </StyleLink>
       <Sellbutton />
     </StyledNav>
   );

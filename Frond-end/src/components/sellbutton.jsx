@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";  // Importa el hook useNavigate
 import styled from "styled-components";  // Importa styled-components
  
-const BuyButton = styled.button`    // Crea un componente AddButton con styled-components
+const SellButton = styled.button`    // Crea un componente AddButton con styled-components
         background-color: #3DE361;
        
         font-family: 'Jost', sans-serif;
@@ -52,10 +52,10 @@ const Sellbutton = () => {   // Crea un componente Addbutton
     const navigate = useNavigate();  // Declara una constante navigate que almacena el hook useNavigate
 
     return (  // Devuelve el componente AddButton con el evento onClick que redirige a la ruta /NewItem// Añade la clase "add-button" al componente AddButton
-        <Sellbutton className="sell-button" onClick={() => navigate("/NewItem")}>             
+        <Sellbutton className="sell-button" onClick={() => navigate("/SellProduct")}>             
                 <p className="sell-product">Vender</p>
         </Sellbutton>
         );
 }
 
-export default Buybutton; // Exporta el componente Addbutton
+export default SellButton; // Exporta el componente Addbutton

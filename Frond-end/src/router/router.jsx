@@ -1,14 +1,15 @@
 import { createBrowserRouter } from "react-router-dom";
-import LayoutPublic from "../components/layout";
-import Home from "../components/pages/Home";
-import Footer from "../components/footer";
-import Card from "../components/card/Card";
+import Layout from "../components/layout";
+import Home from "../pages/Home";
+import SellProduct from "../components/SellForm";
+import EditProduct from "../components/EditProduct";
+import Card from "../components/Cards";
 
 
 export const router = createBrowserRouter([
-  {npm 
+  {
       path: "/",
-      element: <LayoutPublic />,
+      element: <Layout />,
       children: [
     {
       path: "/",
@@ -16,28 +17,16 @@ export const router = createBrowserRouter([
     },
 
     {
-      path: "/footer",
-      element: <Footer/>
-    },
-    {
-      path: "/NewItem",
-      element: <NewItem/>,
+      path: "/SellProduct",
+      element: <SellProduct/>,
     },
     {
       path: "/Edit/:id",
-      element: <Edit/>
-    },
-    {
-      path: "/Gallery",
-      element: <Gallery/>
+      element: <EditProduct/>
     },
     {
       path: "/card/:id",
       element: <Card/>
-    },
-    {
-      path: "/imgupload/",
-      element: <ImageUpload/>
     }
   ],
   }
