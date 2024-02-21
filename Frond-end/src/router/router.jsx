@@ -1,12 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 import LayoutPublic from "../components/layout";
-import Home from "../components/pages/Home";ter-dom
+import Home from "../components/pages/Home";
 import Footer from "../components/footer";
 import Card from "../components/card/Card";
 
 
 export const router = createBrowserRouter([
-  {
+  {npm 
       path: "/",
       element: <LayoutPublic />,
       children: [
