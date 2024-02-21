@@ -1,16 +1,50 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from '../pages/Home';
+import { createBrowserRouter } from "react-router-dom";
+import LayoutPublic from "../components/layout";
+import Home from "../components/home/Home";
+import NewItem from "../components/newitem/NewItem";
+import Edit from "../components/edit/Edit";
+import Footer from "../components/footer/footer";
+import Gallery from "../components/gallery/Gallery";
+import Card from "../components/card/Card";
+import ImageUpload from "../components/ImageUpload/imgupload";
 
-const AppRouter = () => {
-  return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        {/* Agrega aquí más rutas según sea necesario */}
-      </Switch>
-    </Router>
-  );
-};
 
-export default AppRouter;
+export const router = createBrowserRouter([
+  {
+      path: "/",
+      element: <LayoutPublic />,
+      children: [
+    {
+      path: "/",
+      element: <Home/>,
+    },
+
+    {
+      path: "/footer",
+      element: <Footer/>
+    },
+    {
+      path: "/NewItem",
+      element: <NewItem/>,
+    },
+    {
+      path: "/Edit/:id",
+      element: <Edit/>
+    },
+    {
+      path: "/Gallery",
+      element: <Gallery/>
+    },
+    {
+      path: "/card/:id",
+      element: <Card/>
+    },
+    {
+      path: "/imgupload/",
+      element: <ImageUpload/>
+    }
+  ],
+  }
+  ]);
+
+export default router;
