@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import { useForm } from 'react-hook-form';
 import styled from 'styled-components';
-import { updateItem, getOneProduct } from '../services/service';
+import { updateItem, getOneProduct } from '../services/services';
 import { useParams } from 'react-router'; // Importa el hook useParams
 
 const StyledEdit = styled.div`

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { useParams } from 'react-router-dom';
-import { getOneProduct } from '../../services/service';  // Cambiado "service" por "services/service" donde tenemos los métodos de la API
+import { getOneProduct } from '../services/service';  // Cambiado "service" por "services/service" donde tenemos los métodos de la API
 const CardContainer = styled.div`
     display: flex;
     align-content: center;

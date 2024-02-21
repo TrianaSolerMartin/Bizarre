@@ -1,7 +1,7 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
 import styled from 'styled-components';
-import { addProduct } from '../../services/service';
+import { SellProduct } from '../services/services';
 
 const StyledSellProduct = styled.div`
 
