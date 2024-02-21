@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form'
 import { Navigate } from 'react-router-dom'
 import { Link } from 'react-router-dom';
 
-const Form = () => {
+const SellForm = () => {
   const { register, handleSubmit, reset, formState: { errors } } = useForm()
 
   const [goToHome, setGoToHome] = React.useState(false);
@@ -63,4 +63,4 @@ const Form = () => {
   )
 };
 
-export default Form
+export default SellForm

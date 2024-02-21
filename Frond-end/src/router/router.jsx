@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import LayoutPublic from "../components/layout";
 import Home from "../components/home/Home";
-import NewItem from "../components/newitem/NewItem";
+import SellForm from "../components/SellForm";
 import Edit from "../components/edit/Edit";
 import Footer from "../components/footer/footer";
 import Gallery from "../components/gallery/Gallery";
@@ -24,8 +24,8 @@ export const router = createBrowserRouter([
       element: <Footer/>
     },
     {
-      path: "/NewItem",
-      element: <NewItem/>,
+      path: "/sellform",
+      element: <SellForm/>,
     },
     {
       path: "/Edit/:id",
