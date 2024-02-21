@@ -1,0 +1,91 @@
+.container-form {
+    display: flex;
+    flex-direction: column;
+    width: min(78%, 600px);
+    padding: 35px;
+    border: solid 2px #43766c;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #43766c;
+    background: center / contain no-repeat;
+    background-image: linear-gradient(rgba(248, 250, 229, 0.5), rgba(248, 250, 229, 0.5)), url(src/assets/escultura-mujer.svg);
+    gap: 30px;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.form-title {
+    font-family: "Merriweather", sans-serif;
+    text-align: center;
+    color: #43766c;
+    margin-top: 5px;
+}
+
+form input {
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #43766c;
+    margin-top: 6px;
+}
+
+::placeholder {
+    color: #AAA9A9;
+    font-size: 1rem;
+}
+
+.text-error{
+    color: red;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+}
+
+/* .img-file {
+    border-bottom: none;
+    color: #43766c;
+} */
+
+@media screen and (max-width: 480px) {
+    .container-form {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .form-title {
+        font-size: 1.5rem;
+        margin-top: 5px;
+    }
+
+    form label {
+        font-size: 1rem;
+    }
+    
+    form input {
+        font-size: 0.8rem;
+    }
+    
+    ::placeholder {
+        font-size: 0.8rem;
+    }
+    
+    .text-error{
+        font-size: 0.7rem;
+    }
+
+    .buttons-container {
+        gap: 10px;
+    }    
+} 
