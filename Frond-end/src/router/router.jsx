@@ -1,12 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import LayoutPublic from "../components/layout";
-import Home from "../components/home/Home";
-import NewItem from "../components/newitem/NewItem";
-import Edit from "../components/edit/Edit";
-import Footer from "../components/footer/footer";
-import Gallery from "../components/gallery/Gallery";
+import Home from "../components/pages/Home";ter-dom
+import Footer from "../components/footer";
 import Card from "../components/card/Card";
-import ImageUpload from "../components/ImageUpload/imgupload";
 
 
 export const router = createBrowserRouter([

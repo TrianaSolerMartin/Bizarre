@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import Sellbutton from './sellbutton';
-import { Link } from 'react-router-dom';
 
 // Eliminé la declaración de estilo 'body' ya que no se puede usar en este contexto
 
