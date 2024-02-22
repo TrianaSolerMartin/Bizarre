@@ -1,0 +1,43 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+img {
+  width: 200px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  list-style-type: none;
+}
+ 
+nav a {
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.card {
+  padding: 2em;
+}
+
+* {
+  font-family: 'Cuprum', sans-serif;
+}

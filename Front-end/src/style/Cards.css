@@ -1,0 +1,25 @@
+.col{
+    width: 250px;
+    height: 250px;
+}
+
+h6{
+    color:#FF9C61 ;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 200px;
+}
+
+.card-body{
+    width: 100%;
+}
+
+.card{
+    background-color: #29696B;
+}
+
+.card-title{
+    color: white;
+}
