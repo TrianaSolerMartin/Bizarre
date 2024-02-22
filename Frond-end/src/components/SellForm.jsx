@@ -111,7 +111,7 @@ const SellProduct= () => {  // Añade el hook useNavigate a la importación de r
     const { register, formState: { errors }, handleSubmit, reset} = useForm(); // Desestructura los métodos register, errors y handleSubmit del hook useForm
 
     const onSubmit = async (data) => {  // Crea una función asíncrona onSubmit que recibe un parámetro data y hace una petición a la API con el método addBicycle
-        const { success, error } = await addProduct(data);  // Desestructura las propiedades success y error de la respuesta de la petición a la API con el método addBicycle
+        const { success, error } = await SellProduct(data);  // Desestructura las propiedades success y error de la respuesta de la petición a la API con el método addBicycle
 
         if (success) {  // Si success es true
             // Mostrar mensaje de éxito

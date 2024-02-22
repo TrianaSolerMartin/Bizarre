@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { useParams } from 'react-router-dom';
 import { getOneProduct } from '../services/service';  // Cambiado "service" por "services/service" donde tenemos los métodos de la API
+
 const CardContainer = styled.div`
     display: flex;
     align-content: center;
@@ -55,7 +56,7 @@ const Card = () => {  // Cambiado "props" por "id" para que coincida con el nomb
     const [Product, setProduct] = useState();  //Usamos el hook useState para guardar el estado de la bicicleta
 
     useEffect(() => {  //Usamos el hook useEffect para hacer la petición a la API
-        const fetchproductDetails = async () => {           //fetchproductDetails es una función asíncrona que nos permite hacer la petición a la API
+        const fetchProductDetails = async () => {           //fetchproductDetails es una función asíncrona que nos permite hacer la petición a la API
             const detailedProduct = await getOneProduct(id);  //Usamos el método getOneproduct de la API para obtener los detalles de la bicicleta
             setProduct(detailedProduct); //Usamos el método setproduct para guardar los detalles de la bicicleta en el estado
         };

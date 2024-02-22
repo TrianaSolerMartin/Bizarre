@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import BackgroundHome from '../../assets/img/BackgroundHome.png';
 import { useNavigate } from "react-router-dom";
 import { getProducts, deleteProduct } from '../services/services';
 
